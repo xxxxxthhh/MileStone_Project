@@ -1,0 +1,40 @@
+<!--create.ejs-->
+<form action="/estate/create" method="POST">
+    <div class="form-group">
+        <!-- estate name: for sale -->
+        <label>Property title</label>
+        <input type="text" class="form-control" name="Estate[name]" required>
+    </div>
+    <div class="form-group">
+        <!-- !!! need change to select mood -->
+        <!-- have estate list -->
+        <label>Estate</label>
+        <input type="text" class="form-control" name="Estate[name]" required>
+    </div>
+    <div class="form-group">
+        <!-- !area + sq feet -->
+        <label>Gross Area</label>
+        <input type="number" class="form-control" name="Estate[gross]" required>
+    </div>
+    <div class="form-group">
+        <!-- !$ + rent price -->
+        <label>Rent</label>
+        <input type="number" class="form-control" name="Estate[rent]" required>
+    </div>
+    <div class="form-group">
+        <!-- ! add limitation -->
+        <label>Bedrooms</label>
+        <input type="number" class="form-control" name="Estate[bedrooms]" required>
+    </div>
+    <div class="form-group">
+        <!-- !add limitation -->
+        <label>Expected Tenants</label>
+        <input type="number" class="form-control" name="Estate[tenants]" required>
+    </div>
+    <div class="form-group">
+        <input type="checkbox" class="form-control" name="Estate[highlighted]" value="1">Highlighted Property<br>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
